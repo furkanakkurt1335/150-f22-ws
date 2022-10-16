@@ -1,0 +1,92 @@
+<!doctype html>
+<html>
+<head>
+<meta charset='UTF-8'>
+<meta name='viewport' content='width=device-width initial-scale=1'>
+
+<link rel="stylesheet" href="css/question.css">
+
+<title>Question</title>
+</head>
+
+<body>
+<div>
+<div>
+<h1>
+<span>Workshop Question 2: File IO</span>
+</h1>
+
+<p><span>Please read <a href='ReadMe.html'> important information</a> first. </span>
+
+</p>
+
+<h2 ><span>Description</span></h2>
+
+<p> We will use a cone which has a radius <i> r </i> and a height <i> h </i>, for this question.
+
+We will also use a cup and a glass.
+
+<p><span>Read the four variables <i>r, h, cup_volume, glass_volume</i> from a given file name, each placed in a separate line, respectively. </span></p>
+
+<hr>
+
+<p>
+
+Write three functions <i>calculate_cone_base_area</i>, <i> calculate_cone_lateral_area</i>, and <i>calculate_cone_volume</i>. 
+
+</p>
+
+<p>
+  
+<code>calculate_cone_base_area </code> must calculate the cone's base area (circle) as <i>3 * r<sup>2</sup></i> and return that value, taking the PI as 3.
+
+</p>
+
+<p>
+<code>calculate_cone_lateral_area </code> must calculate <i> 3 * r * &Sqrt; <span style="text-decoration:overline;"> h <sup>2</sup> * r <sup>2</sup> </span> </i> and return that value, taking the PI as 3.
+</p>
+
+<p>
+<code>calculate_cone_volume</code> must evaluate the volume of the cone by <i> 3 * r <sup>2</sup> * h / 3 </i>.
+
+</p>
+
+<hr>
+
+<p>
+
+We have a cup which is larger than our cone and we wish to fill it by using this cup. Display how many times we should use the cone to fill the cup fully. (The cup's volume is a multiple of the cone's volume.)
+
+</p>
+
+<p>
+
+Next, we have a glass which is smaller than our cone and we wish to fill the cone by using the glass's entire volume; however this time, the cone's volume is not a multiple of the glass so the cone will not be full in the end. Display as integer what percentage of the cone's volume will be empty.
+
+</p>
+
+
+<hr>
+
+<table>
+<tr><th> Input </th> <th> Output </th></tr>
+
+<tr><td> file1.txt  </td> <td> <pre>r: 6.00, h: 6.00
+Cone's base area: 108.00
+5.0
+100</pre> </td></tr>
+
+<tr><td> file2.txt </td> <td><pre>r: 3.00, h: 12.00
+Cone's base area: 27.00
+10.0
+100</pre> </td></tr>
+
+<tr><td> file3.txt </td> <td><pre>r: 6.00, h: 5.00
+Cone's base area: 108.00
+8.0
+100</pre> </td></tr>
+
+</table>
+
+</body>
+</html>
