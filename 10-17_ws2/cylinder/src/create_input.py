@@ -6,17 +6,17 @@ import os
 def generate_random_input():
     r = random.randint(1, 40)
     h = random.randint(1, 40)
-    cone_volume = 3 * (r**2) * h / 3
+    cylinder_volume = 3 * (r**2) * h
     cup_volume_mul = random.randint(2, 10)
-    cup_volume = cone_volume * cup_volume_mul
+    cup_volume = cylinder_volume * cup_volume_mul
     glass_volume = 1
-    while ((cone_volume % glass_volume) / cone_volume) * 100 < 1:
+    while ((cylinder_volume % glass_volume) / cylinder_volume) * 100 < 1:
         glass_volume = random.randint(2, 1000)
     input_str = '{r}\n{h}\n{cup_v}\n{glass_v}'.format(r=r, h=h, cup_v=int(cup_volume), glass_v=int(glass_volume))
     output_str = "r: %.2f, h: %.2f\n" % (r, h)
-    output_str += "Cone's base area: %.2f\n" % (3 * (r**2))
-    output_str += str(cup_volume / cone_volume) + '\n'
-    output_str += str(int(((cone_volume % glass_volume) / cone_volume) * 100)) + '\n'
+    output_str += "Cylinder's base area: %.2f\n" % (3 * (r**2))
+    output_str += str(cup_volume / cylinder_volume) + '\n'
+    output_str += str(int(((cylinder_volume % glass_volume) / cylinder_volume) * 100)) + '\n'
     return input_str, output_str
 
 inputs = []
@@ -35,7 +35,6 @@ for i in range(1, 6):
         f.write(out_str)
     inputs.append(in_str)
     outputs.append(out_str)
-
 tester_str = r'''
 # 10/16/2022, author: Furkan Akkurt
 # tests generated randomly by script src/create_input.py
