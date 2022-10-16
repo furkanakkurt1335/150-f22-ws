@@ -1,0 +1,92 @@
+<!doctype html>
+<html>
+<head>
+<meta charset='UTF-8'>
+<meta name='viewport' content='width=device-width initial-scale=1'>
+
+<link rel="stylesheet" href="css/question.css">
+
+<title>Question</title>
+</head>
+
+<body>
+<div>
+<div>
+<h1>
+<span>Workshop Question 2: File IO</span>
+</h1>
+
+<p><span>Please read <a href='ReadMe.html'> important information</a> first. </span>
+
+</p>
+
+<h2 ><span>Description</span></h2>
+
+<p> We will use a sphere which has a radius <i> r </i>, for this question.
+
+We will also use a cup and a glass.
+
+<p><span>Read the three variables <i>r, cup_volume, glass_volume</i> from a given file name, each placed in a separate line, respectively. </span></p>
+
+<hr>
+
+<p>
+
+Write three functions <i>calculate_sphere_diameter</i>, <i> calculate_sphere_area</i>, and <i>calculate_sphere_volume</i>. 
+
+</p>
+
+<p>
+  
+<code>calculate_sphere_diameter</code> must calculate the sphere's diameter as <i>2 * r></i> and return that value.
+
+</p>
+
+<p>
+<code>calculate_sphere_area </code> must calculate <i> 4 * 3 * r<sup>2</sup> </i> and return that value, taking the PI as 3.
+</p>
+
+<p>
+<code>calculate_sphere_volume</code> must evaluate the volume of the sphere by <i> 4 / 3 * 3 * r <sup>3</sup> </i>, taking the PI as 3.
+
+</p>
+
+<hr>
+
+<p>
+
+We cut the sphere in half and we have a cup which is larger than our half-sphere and we wish to fill it by using our half-sphere. Display how many times we should use the half-sphere to fill the cup fully. (The cup's volume is a multiple of the half-sphere's volume.)
+
+</p>
+
+<p>
+
+Next, we have a glass which is smaller than our half-sphere and we wish to fill the half-sphere by using the glass's entire volume; however this time, the half-sphere's volume is not a multiple of the glass so the half-sphere will not be full in the end. Display as integer what percentage of the half-sphere's volume will be empty.
+
+</p>
+
+
+<hr>
+
+<table>
+<tr><th> Input </th> <th> Output </th></tr>
+
+<tr><td> file1.txt  </td> <td> <pre>r: 32.00
+Sphere's area: 12288.00
+8.0
+1</pre> </td></tr>
+
+<tr><td> file2.txt </td> <td><pre>r: 25.00
+Sphere's area: 7500.00
+4.0
+1</pre> </td></tr>
+
+<tr><td> file3.txt </td> <td><pre>r: 5.00
+Sphere's area: 300.00
+2.0
+100</pre> </td></tr>
+
+</table>
+
+</body>
+</html>
