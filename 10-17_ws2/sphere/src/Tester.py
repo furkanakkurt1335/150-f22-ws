@@ -32,7 +32,7 @@ import subprocess
 def runtest(executable_file, test_data):
     # Instructors need not change this method, if you do please let us know.
     # command = ["/usr/local/bin/python3", executable_file]
-    command = ["python", executable_file]
+    command = ["python3", executable_file]
 
 
     test_num = test_data[0]
@@ -91,10 +91,10 @@ def test1():
 file1.txt"""
 
     expected_output = """\
-r: 32.00
-Sphere's area: 12288.00
-8.0
-1
+r: 14.00
+Sphere's area: 2352.00
+2.0
+9
 """
     return 1, input_to_test, expected_output
 
@@ -105,9 +105,9 @@ def test2():
 file2.txt"""
 
     expected_output = """\
-r: 25.00
-Sphere's area: 7500.00
-4.0
+r: 34.00
+Sphere's area: 13872.00
+3.0
 1
 """
     return 2, input_to_test, expected_output
@@ -118,77 +118,12 @@ def test3():
 file3.txt"""
 
     expected_output = """\
-r: 5.00
-Sphere's area: 300.00
+r: 1.00
+Sphere's area: 12.00
 2.0
 100
 """
     return 3, input_to_test, expected_output
-
-def testG1():
-
-    input_to_test = """\
-../testcases/file_1.txt"""
-
-    expected_output = """\
-r: 22.00
-Sphere's area: 5808.00
-7.0
-3
-"""
-    return 4, input_to_test, expected_output
-
-def testG2():
-
-    input_to_test = """\
-../testcases/file_2.txt"""
-
-    expected_output = """\
-r: 10.00
-Sphere's area: 1200.00
-10.0
-1
-"""
-    return 5, input_to_test, expected_output
-
-def testG3():
-
-    input_to_test = """\
-../testcases/file_3.txt"""
-
-    expected_output = """\
-r: 5.00
-Sphere's area: 300.00
-7.0
-100
-"""
-    return 6, input_to_test, expected_output
-
-def testG4():
-
-    input_to_test = """\
-../testcases/file_4.txt"""
-
-    expected_output = """\
-r: 24.00
-Sphere's area: 6912.00
-10.0
-1
-"""
-    return 7, input_to_test, expected_output
-
-def testG5():
-
-    input_to_test = """\
-../testcases/file_5.txt"""
-
-    expected_output = """\
-r: 14.00
-Sphere's area: 2352.00
-7.0
-2
-"""
-    return 8, input_to_test, expected_output
 
 if __name__ == "__main__":
 

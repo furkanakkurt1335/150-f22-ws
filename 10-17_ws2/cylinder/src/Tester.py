@@ -32,7 +32,7 @@ import subprocess
 def runtest(executable_file, test_data):
     # Instructors need not change this method, if you do please let us know.
     # command = ["/usr/local/bin/python3", executable_file]
-    command = ["python", executable_file]
+    command = ["python3", executable_file]
 
 
     test_num = test_data[0]
@@ -91,10 +91,10 @@ def test1():
 file1.txt"""
 
     expected_output = """\
-r: 34.00, h: 3.00
-Cylinder's base area: 3468.00
-4.0
-7
+r: 6.00, h: 15.00
+Cylinder's base area: 108.00
+3.0
+45
 """
     return 1, input_to_test, expected_output
 
@@ -105,10 +105,10 @@ def test2():
 file2.txt"""
 
     expected_output = """\
-r: 9.00, h: 22.00
-Cylinder's base area: 243.00
-9.0
-5
+r: 37.00, h: 4.00
+Cylinder's base area: 4107.00
+5.0
+3
 """
     return 2, input_to_test, expected_output
 
@@ -118,77 +118,12 @@ def test3():
 file3.txt"""
 
     expected_output = """\
-r: 33.00, h: 8.00
-Cylinder's base area: 3267.00
-5.0
-2
+r: 21.00, h: 4.00
+Cylinder's base area: 1323.00
+2.0
+11
 """
     return 3, input_to_test, expected_output
-
-def testG1():
-
-    input_to_test = """\
-../testcases/file_1.txt"""
-
-    expected_output = """\
-r: 5.00, h: 26.00
-Cylinder's base area: 75.00
-6.0
-7
-"""
-    return 4, input_to_test, expected_output
-
-def testG2():
-
-    input_to_test = """\
-../testcases/file_2.txt"""
-
-    expected_output = """\
-r: 33.00, h: 24.00
-Cylinder's base area: 3267.00
-6.0
-1
-"""
-    return 5, input_to_test, expected_output
-
-def testG3():
-
-    input_to_test = """\
-../testcases/file_3.txt"""
-
-    expected_output = """\
-r: 26.00, h: 40.00
-Cylinder's base area: 2028.00
-5.0
-1
-"""
-    return 6, input_to_test, expected_output
-
-def testG4():
-
-    input_to_test = """\
-../testcases/file_4.txt"""
-
-    expected_output = """\
-r: 15.00, h: 1.00
-Cylinder's base area: 675.00
-3.0
-8
-"""
-    return 7, input_to_test, expected_output
-
-def testG5():
-
-    input_to_test = """\
-../testcases/file_5.txt"""
-
-    expected_output = """\
-r: 36.00, h: 21.00
-Cylinder's base area: 3888.00
-10.0
-1
-"""
-    return 8, input_to_test, expected_output
 
 if __name__ == "__main__":
 

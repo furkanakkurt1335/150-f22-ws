@@ -1,4 +1,7 @@
 
+# 10/16/2022, author: Furkan Akkurt
+# tests generated randomly by script src/create_input.py
+
 # 20220601, author Murat Ozyurt
 # Question tester for pre-grading check during exam.
 # The tests feed the necessary input to your executable similar to the grading process.
@@ -29,7 +32,7 @@ import subprocess
 def runtest(executable_file, test_data):
     # Instructors need not change this method, if you do please let us know.
     # command = ["/usr/local/bin/python3", executable_file]
-    command = ["python", executable_file]
+    command = ["python3", executable_file]
 
 
     test_num = test_data[0]
@@ -90,7 +93,7 @@ file1.txt"""
     expected_output = """\
 r: 6.00, h: 6.00
 Cone's base area: 108.00
-5.0
+6.0
 100
 """
     return 1, input_to_test, expected_output
@@ -102,10 +105,10 @@ def test2():
 file2.txt"""
 
     expected_output = """\
-r: 3.00, h: 12.00
-Cone's base area: 27.00
-10.0
-100
+r: 13.00, h: 37.00
+Cone's base area: 507.00
+6.0
+2
 """
     return 2, input_to_test, expected_output
 
@@ -115,77 +118,12 @@ def test3():
 file3.txt"""
 
     expected_output = """\
-r: 6.00, h: 5.00
-Cone's base area: 108.00
+r: 33.00, h: 18.00
+Cone's base area: 3267.00
 8.0
-100
-"""
-    return 3, input_to_test, expected_output
-
-def testG1():
-
-    input_to_test = """\
-../testcases/file_1.txt"""
-
-    expected_output = """\
-r: 6.00, h: 2.00
-Cone's base area: 108.00
-10.0
-100
-"""
-    return 4, input_to_test, expected_output
-
-def testG2():
-
-    input_to_test = """\
-../testcases/file_2.txt"""
-
-    expected_output = """\
-r: 12.00, h: 7.00
-Cone's base area: 432.00
-10.0
-30
-"""
-    return 5, input_to_test, expected_output
-
-def testG3():
-
-    input_to_test = """\
-../testcases/file_3.txt"""
-
-    expected_output = """\
-r: 30.00, h: 39.00
-Cone's base area: 2700.00
-9.0
 1
 """
-    return 6, input_to_test, expected_output
-
-def testG4():
-
-    input_to_test = """\
-../testcases/file_4.txt"""
-
-    expected_output = """\
-r: 3.00, h: 3.00
-Cone's base area: 27.00
-9.0
-100
-"""
-    return 7, input_to_test, expected_output
-
-def testG5():
-
-    input_to_test = """\
-../testcases/file_5.txt"""
-
-    expected_output = """\
-r: 29.00, h: 17.00
-Cone's base area: 2523.00
-6.0
-2
-"""
-    return 8, input_to_test, expected_output
+    return 3, input_to_test, expected_output
 
 if __name__ == "__main__":
 

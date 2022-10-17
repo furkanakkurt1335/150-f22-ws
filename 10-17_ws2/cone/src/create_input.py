@@ -70,7 +70,7 @@ import subprocess
 def runtest(executable_file, test_data):
     # Instructors need not change this method, if you do please let us know.
     # command = ["/usr/local/bin/python3", executable_file]
-    command = ["python", executable_file]
+    command = ["python3", executable_file]
 
 
     test_num = test_data[0]
@@ -151,51 +151,6 @@ file3.txt"""
 {output3}"""
     return 3, input_to_test, expected_output
 
-def testG1():
-
-    input_to_test = """\
-../testcases/file_1.txt"""
-
-    expected_output = """\
-{g_output1}"""
-    return 4, input_to_test, expected_output
-
-def testG2():
-
-    input_to_test = """\
-../testcases/file_2.txt"""
-
-    expected_output = """\
-{g_output2}"""
-    return 5, input_to_test, expected_output
-
-def testG3():
-
-    input_to_test = """\
-../testcases/file_3.txt"""
-
-    expected_output = """\
-{g_output3}"""
-    return 6, input_to_test, expected_output
-
-def testG4():
-
-    input_to_test = """\
-../testcases/file_4.txt"""
-
-    expected_output = """\
-{g_output4}"""
-    return 7, input_to_test, expected_output
-
-def testG5():
-
-    input_to_test = """\
-../testcases/file_5.txt"""
-
-    expected_output = """\
-{g_output5}"""
-    return 8, input_to_test, expected_output
-
 if __name__ == "__main__":
 
     executable_file = "./Main.py"
@@ -203,7 +158,7 @@ if __name__ == "__main__":
     runtest(executable_file, test1())
     runtest(executable_file, test2())
     runtest(executable_file, test3())
-'''.format(output1=outputs[0], output2=outputs[1], output3=outputs[2], g_output1=outputs[3], g_output2=outputs[4], g_output3=outputs[5], g_output4=outputs[6], g_output5=outputs[7])
+'''.format(output1=outputs[0], output2=outputs[1], output3=outputs[2])
 
 with open('Tester.py', 'w', encoding='utf-8') as f:
     f.write(tester_str)
