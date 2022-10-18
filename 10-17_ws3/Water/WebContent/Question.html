@@ -1,0 +1,100 @@
+<!doctype html>
+<html>
+<head>
+<meta charset='UTF-8'>
+<meta name='viewport' content='width=device-width initial-scale=1'>
+
+<link rel="stylesheet" href="css/question.css">
+
+<title>Question</title>
+</head>
+
+<body>
+<div>
+<div>
+<h1>
+<span>Workshop Question 2: File IO</span>
+</h1>
+
+<p><span>Please read <a href='ReadMe.html'> important information</a> first. </span>
+
+</p>
+
+<h2 ><span>Description</span></h2>
+
+<p> We will use a square prism-shaped containers which has a height <i> container_height </i>, square base edge <i> container_base_edge </i>, a cylindrical glass which has a base radius <i> glass_base_radius </i>, height <i> glass_height </i>, and the number of students <i> student_count </i> for this question.
+
+<p><span>Read the five variables <i>container_height, container_base_edge, glass_base_radius, glass_height, student_count</i> from a given file name, each placed in a separate line, respectively. </span></p>
+
+<hr>
+
+<p>
+
+Write three functions <i>calculate_container_base_area</i>, <i> calculate_container_volume</i>, and <i>calculate_glass_volume</i>. 
+
+</p>
+
+<p>
+  
+<code>calculate_container_base_area </code> must calculate the container's base area as <i>container_base_edge<sup>2</sup></i> and return that value.
+
+</p>
+
+<p>
+<code>calculate_glass_volume</code> must evaluate the volume of the glass by <i> 3 * glass_base_radius <sup>2</sup> * glass_height, taking the PI as 3.</i>
+</p>
+
+<p>
+<code>calculate_container_volume</code> must evaluate the volume of the pot by <i> container_base_edge<sup>2</sup> * container_height </i>.
+
+</p>
+
+<hr>
+
+<p>
+
+There are containers for drinking water in the form of square prisms at various points at Boğaziçi University. Students drink water from these containers using cylindrical glasses. There are X students in the school. One student drinks 10 glasses of water a day from these containers.
+</p>
+
+<p>
+
+How many liters of water does each student drink per day?
+
+</p>
+
+<p>
+
+These containers are filled with water once a day. How many containers are needed for enough water for all students?
+</p>
+
+
+<hr>
+
+<table>
+<tr><th> Input </th> <th> Output </th></tr>
+
+<tr><td> file1.txt  </td> <td> <pre>container_height: 100.00, container_base_edge: 100.00, glass_base_radius: 5.00, glass_height: 10.00, student_count: 200000.00
+10000.0
+750.0
+1000000.0
+7500.0
+1500.0</pre> </td></tr>
+
+<tr><td> file2.txt </td> <td><pre>container_height: 196.00, container_base_edge: 140.00, glass_base_radius: 10.00, glass_height: 49.00, student_count: 39200.00
+19600.0
+14700.0
+3841600.0
+147000.0
+1500.0</pre> </td></tr>
+
+<tr><td> file3.txt </td> <td><pre>container_height: 30.00, container_base_edge: 90.00, glass_base_radius: 3.00, glass_height: 3.00, student_count: 1500.00
+8100.0
+81.0
+243000.0
+810.0
+5.0</pre> </td></tr>
+
+</table>
+
+</body>
+</html>

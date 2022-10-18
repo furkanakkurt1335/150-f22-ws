@@ -1,0 +1,96 @@
+<!doctype html>
+<html>
+<head>
+<meta charset='UTF-8'>
+<meta name='viewport' content='width=device-width initial-scale=1'>
+
+<link rel="stylesheet" href="css/question.css">
+
+<title>Question</title>
+</head>
+
+<body>
+<div>
+<div>
+<h1>
+<span>Workshop Question 2: File IO</span>
+</h1>
+
+<p><span>Please read <a href='ReadMe.html'> important information</a> first. </span>
+
+</p>
+
+<h2 ><span>Description</span></h2>
+
+<p> We will use a rectangular prism-shaped pots which has a height <i> h </i>, length <i> l </i>, depth <i> d </i>, a cylindrical container which has a base radius <i> r </i>, height <i> k </i>, the number of students eating in the cafeteria <i> y </i>, the percentage of the students prefer hummus (between 1 and 100) <i> x </i>, and the cost of one schnitzel <i> n </i>  for this question.
+
+<p><span>Read the eight variables <i>h, l, d, r, k, y, x, n</i> from a given file name, each placed in a separate line, respectively. </span></p>
+
+<hr>
+
+<p>
+
+Write three functions <i>calculate_container_base_area</i>, <i> calculate_container_volume</i>, and <i>calculate_pot_volume</i>. 
+
+</p>
+
+<p>
+  
+<code>calculate_container_base_area </code> must calculate the container's base area (circle) as <i>3 * r<sup>2</sup></i> and return that value, taking the PI as 3.
+
+</p>
+
+<p>
+<code>calculate_container_volume</code> must evaluate the volume of the cone by <i> 3 * r <sup>2</sup> * k </i>.
+</p>
+
+<p>
+<code>calculate_pot_volume</code> must evaluate the volume of the pot by <i> h * l * d </i>.
+
+</p>
+
+<hr>
+
+<p>
+
+Today, there is hummus at Boğaziçi University Cafeteria. Hummus comes to the cafeteria in rectangular prism-shaped pots. y students eat at the cafeteria every day. x percent of the students prefer hummus. students take their hummus meal in cylindrical containers. How many pots of hummus do you need to have hummus for all of the students who prefer hummus?
+
+</p>
+
+<p>
+
+The cafeteria wants to give schnitzels to students who do not take hummus. These students take 2 schnitzels and a schnitzel costs n lira. What is the total cost of the schnitzel to the cafeteria?
+
+</p>
+
+
+<hr>
+
+<table>
+<tr><th> Input </th> <th> Output </th></tr>
+
+<tr><td> file1.txt  </td> <td> <pre>h: 100.00, l: 20.00, d: 30.00, r: 10.00, k: 5.00, y: 4000.00, x: 50.00, n: 10.00
+300.0
+1500.0
+60000.0
+50.0
+40000.0</pre> </td></tr>
+
+<tr><td> file2.txt </td> <td><pre>h: 120.00, l: 10.00, d: 100.00, r: 10.00, k: 1.00, y: 1000000.00, x: 12.00, n: 5.00
+300.0
+300.0
+120000.0
+300.0
+8800000.0</pre> </td></tr>
+
+<tr><td> file3.txt </td> <td><pre>h: 60.00, l: 10.00, d: 10.00, r: 2.00, k: 10.00, y: 60000.00, x: 50.00, n: 10.00
+12.0
+120.0
+6000.0
+600.0
+600000.0</pre> </td></tr>
+
+</table>
+
+</body>
+</html>
