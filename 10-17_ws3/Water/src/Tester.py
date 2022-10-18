@@ -31,8 +31,7 @@ import subprocess
 
 def runtest(executable_file, test_data):
     # Instructors need not change this method, if you do please let us know.
-    # command = ["/usr/local/bin/python3", executable_file]
-    command = ["python", executable_file]
+    command = ["python3", executable_file]
 
 
     test_num = test_data[0]
@@ -130,51 +129,6 @@ container_height: 30.00, container_base_edge: 90.00, glass_base_radius: 3.00, gl
 5.0
 """
     return 3, input_to_test, expected_output
-
-def testG1():
-
-    input_to_test = """\
-../testcases/file_1.txt"""
-
-    expected_output = """\
-"""
-    return 4, input_to_test, expected_output
-
-def testG2():
-
-    input_to_test = """\
-../testcases/file_2.txt"""
-
-    expected_output = """\
-"""
-    return 5, input_to_test, expected_output
-
-def testG3():
-
-    input_to_test = """\
-../testcases/file_3.txt"""
-
-    expected_output = """\
-"""
-    return 6, input_to_test, expected_output
-
-def testG4():
-
-    input_to_test = """\
-../testcases/file_4.txt"""
-
-    expected_output = """\
-"""
-    return 7, input_to_test, expected_output
-
-def testG5():
-
-    input_to_test = """\
-../testcases/file_5.txt"""
-
-    expected_output = """\
-"""
-    return 8, input_to_test, expected_output
 
 if __name__ == "__main__":
 

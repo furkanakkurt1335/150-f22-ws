@@ -48,7 +48,7 @@ print(calculate_glass_volume()*10)
 
 # DO_NOT_EDIT_ANYTHING_BELOW_THIS_LINE
 #----------------------------------------------------------------
-# These containers are filled with water once a day. How many containers are needed for enough water for all students? Print the value.
+# These containers are filled with water once a day. How many containers are needed for enough water for all the students? Print the value.
 #----------------------------------------------------------------
 # DO_NOT_EDIT_ANYTHING_ABOVE_THIS_LINE
 

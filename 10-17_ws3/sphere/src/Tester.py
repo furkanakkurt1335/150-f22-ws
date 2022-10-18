@@ -31,7 +31,6 @@ import subprocess
 
 def runtest(executable_file, test_data):
     # Instructors need not change this method, if you do please let us know.
-    # command = ["/usr/local/bin/python3", executable_file]
     command = ["python3", executable_file]
 
 

@@ -43,7 +43,7 @@ print(calculate_container_base_area())
 print(calculate_container_volume())
 print(calculate_pot_volume())
 
-# Display how many pots of hummus do you need to have hummus for all of the students
+# Display how many pots of hummus do you need to have to provide for all of the students
 #----------------------------------------------------------------
 # DO_NOT_EDIT_ANYTHING_ABOVE_THIS_LINE
 
