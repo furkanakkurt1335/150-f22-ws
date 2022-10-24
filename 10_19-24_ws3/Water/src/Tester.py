@@ -1,7 +1,3 @@
-
-# 10/16/2022, author: Furkan Akkurt
-# tests generated randomly by script src/create_input.py
-
 # 20220601, author Murat Ozyurt
 # Question tester for pre-grading check during exam.
 # The tests feed the necessary input to your executable similar to the grading process.
