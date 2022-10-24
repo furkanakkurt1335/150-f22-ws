@@ -37,8 +37,6 @@ for i in range(1, 6):
         f.write(in_str)
     with open(os.path.join('../testcases', 'output{n}'.format(n=i)), 'w') as f:
         f.write(out_str)
-    inputs.append(in_str)
-    outputs.append(out_str)
 
 tester_str = r'''
 # 10/16/2022, author: Furkan Akkurt
