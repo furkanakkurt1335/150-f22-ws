@@ -18,8 +18,8 @@ with open(integer_file_name) as f:
 # DO_NOT_EDIT_ANYTHING_BELOW_THIS_LINE
 
 # print strings, according to the following instructions:
-# 1. If the integer in seconds represents more than 1 year, print "More than 1 year"
-# 2. If the integer in seconds represents more than 1 day, print "More than 1 day"
+# 1. If the integer in seconds represents more than 1 year, print "More than 1 year" 
+# 2. If the integer in seconds represents more than 1 day, print "More than 1 day" (If it is more than a year, it is already more than a day so you should print both on seperate lines)
 # Years and days are of Earth, 365 days and 24 hours, respectively.
 # DO_NOT_EDIT_ANYTHING_ABOVE_THIS_LINE
 
