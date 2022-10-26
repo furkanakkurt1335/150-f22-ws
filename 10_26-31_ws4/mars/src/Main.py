@@ -20,12 +20,12 @@ with open(integer_file_name) as f:
 # print strings, according to the following instructions:
 # 1. If the integer in seconds represents more than 1 year, print "More than 1 year"
 # 2. If the integer in seconds represents more than 1 day, print "More than 1 day"
-# Years and days are of Earth, 365 days and 24 hours, respectively.
+# Years and days are of Mars, 687 days and 25 hours, respectively.
 # DO_NOT_EDIT_ANYTHING_ABOVE_THIS_LINE
 
-if integer > 60*60*24*365:
+if integer > 60*60*25*687:
     print('More than 1 year')
-if integer > 60*60*24:
+if integer > 60*60*25:
     print('More than 1 day')
 
 # DO_NOT_EDIT_ANYTHING_BELOW_THIS_LINE
