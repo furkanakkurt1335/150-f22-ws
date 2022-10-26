@@ -1,5 +1,5 @@
 
-# 10/24/2022, author: Furkan Akkurt
+# 10/16/2022, author: Furkan Akkurt
 # tests generated randomly by script src/create_input.py
 
 # 20220601, author Murat Ozyurt
@@ -32,6 +32,7 @@ import sys
 
 
 def runtest(executable_file, test_data):
+    # Instructors need not change this method, if you do please let us know.
     command = [sys.executable, executable_file]
 
     test_num = test_data[0]
@@ -93,7 +94,7 @@ file1.txt"""
 integer1.txt"""
 
     expected_output = """\
-More than 1 day"""
+"""
     return 1, input_to_test, integer_to_test, expected_output
 
 
@@ -106,7 +107,7 @@ file2.txt"""
 integer2.txt"""
 
     expected_output = """\
-More than 1 day"""
+"""
     return 2, input_to_test, integer_to_test, expected_output
 
 
@@ -119,7 +120,6 @@ file3.txt"""
 integer3.txt"""
 
     expected_output = """\
-More than 1 year
 More than 1 day"""
     return 3, input_to_test, integer_to_test, expected_output
 
@@ -131,3 +131,4 @@ if __name__ == "__main__":
     runtest(executable_file, test1())
     runtest(executable_file, test2())
     runtest(executable_file, test3())
+

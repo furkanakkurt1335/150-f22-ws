@@ -32,16 +32,19 @@ import sys
 
 
 def runtest(executable_file, test_data):
+    # Instructors need not change this method, if you do please let us know.
     command = [sys.executable, executable_file]
 
     test_num = test_data[0]
     input_to_test = test_data[1]
-    expected_output = test_data[2].rstrip()
+    integer_to_test = test_data[2]
+    expected_output = test_data[3].rstrip()
 
     p = subprocess.Popen(command, stdout=subprocess.PIPE,
                          stdin=subprocess.PIPE)
 
-    out, err = p.communicate(bytes(input_to_test.encode("utf-8")))
+    out, _ = p.communicate(bytes(input_to_test.encode(
+        "utf-8")) + bytes('\n'.encode('utf-8')) + bytes(integer_to_test.encode("utf-8")))
     answer = out.decode("utf-8").rstrip()
     print("_______________________________________________________")
     if answer == expected_output:
@@ -87,9 +90,12 @@ def test1():
     input_to_test = """\
 file1.txt"""
 
+    integer_to_test = """\
+integer1.txt"""
+
     expected_output = """\
 More than 1 day"""
-    return 1, input_to_test, expected_output
+    return 1, input_to_test, integer_to_test, expected_output
 
 
 def test2():
@@ -97,10 +103,12 @@ def test2():
     input_to_test = """\
 file2.txt"""
 
+    integer_to_test = """\
+integer2.txt"""
+
     expected_output = """\
-More than 1 year
-More than 1 day"""
-    return 2, input_to_test, expected_output
+"""
+    return 2, input_to_test, integer_to_test, expected_output
 
 
 def test3():
@@ -108,9 +116,12 @@ def test3():
     input_to_test = """\
 file3.txt"""
 
+    integer_to_test = """\
+integer3.txt"""
+
     expected_output = """\
 More than 1 day"""
-    return 3, input_to_test, expected_output
+    return 3, input_to_test, integer_to_test, expected_output
 
 
 if __name__ == "__main__":
@@ -120,3 +131,4 @@ if __name__ == "__main__":
     runtest(executable_file, test1())
     runtest(executable_file, test2())
     runtest(executable_file, test3())
+
