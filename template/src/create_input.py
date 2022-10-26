@@ -72,7 +72,6 @@ import sys
 
 
 def runtest(executable_file, test_data):
-    # Instructors need not change this method, if you do please let us know.
     command = [sys.executable, executable_file]
 
     test_num = test_data[0]
@@ -82,7 +81,6 @@ def runtest(executable_file, test_data):
     p = subprocess.Popen(command, stdout=subprocess.PIPE,
                          stdin=subprocess.PIPE)
 
-    #out, err = p.communicate(b"10\nsecondinput")
     out, err = p.communicate(bytes(input_to_test.encode("utf-8")))
     answer = out.decode("utf-8").rstrip()
     print("_______________________________________________________")

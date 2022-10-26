@@ -1,0 +1,89 @@
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width initial-scale=1" />
+    <link rel="stylesheet" href="css/question.css" />
+    <title>Question</title>
+  </head>
+
+  <body>
+    <div>
+      <div>
+        <h1>
+          <span>Workshop Question 4: Mathematical Operators with File I/O</span>
+        </h1>
+
+        <p>
+          <span>
+            Please read <a href="ReadMe.html"> important information</a> first.
+          </span>
+        </p>
+
+        <h2>
+          <span> Description </span>
+        </h2>
+
+        <hr />
+
+        <p>
+          You will be given 2 files as input in order in the forms of
+          <i>'file*.txt'</i> and <i>'integer*.txt'</i> (* represent a number).
+          You are supposed to read the first file (<i>'file*.txt'</i>) entirely,
+          convert the content of the file to an integer and store it as a
+          variable. This integer represents how many characters you are supposed
+          to read from the second file (<i>'integer*.txt'</i>). You are supposed
+          to convert the content of the second file (read only as much as the
+          stored variable amount) to an integer if it's not given as such
+          (possibly an alphabetic character). This integer represents seconds.
+          You are requested to print strings, according to the following
+          instructions, in separate lines (using <i>'\n'</i>):
+        </p>
+        <p>
+          1. If the integer in seconds represents more than 1 year, print "More
+          than 1 year"
+        </p>
+        <p>
+          2. If the integer in seconds represents more than 1 day, print "More
+          than 1 day"
+        </p>
+        <p>Years and days are of Mars, 687 days and 25 hours, respectively.</p>
+
+        <hr />
+
+        <table>
+          <tr>
+            <th>Input</th>
+            <th>Output</th>
+          </tr>
+
+          <tr>
+            <td>file1.txt and integer1.txt</td>
+            <td>
+              <pre>More than 1 day</pre>
+            </td>
+          </tr>
+
+          <tr>
+            <td>file2.txt and integer2.txt</td>
+            <td>
+              <pre>
+More than 1 year
+More than 1 day</pre
+              >
+            </td>
+          </tr>
+
+          <tr>
+            <td>file3.txt and integer3.txt</td>
+            <td>
+              <pre>
+More than 1 year
+More than 1 day</pre
+              >
+            </td>
+          </tr>
+        </table>
+      </div>
+    </div>
+  </body>
+</html>
