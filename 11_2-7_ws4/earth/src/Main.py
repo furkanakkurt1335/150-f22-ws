@@ -18,14 +18,20 @@ with open(integer_file_name) as f:
 # DO_NOT_EDIT_ANYTHING_BELOW_THIS_LINE
 
 # print strings, according to the following instructions:
-# 1. If the integer in seconds represents more than 1 year, print "More than 1 year"
-# 2. If the integer in seconds represents more than 1 day, print "More than 1 day"
-# Years and days are of Earth, 365 days and 24 hours, respectively.
+# If the integer in seconds represents less than or equal to 1 day, print "Less than 1 day".
+# If the integer in seconds represents more than 1 day, print "More than 1 day".
+# If the integer in seconds represents more than 1 year, print "More than 1 year". Do not print "More than 1 day".
+# Years and days are of Earth, 365 days and 24 hours, respectively. In the end, only 1 line will be printed.
 # DO_NOT_EDIT_ANYTHING_ABOVE_THIS_LINE
 
-if integer > 60*60*24*365:
+year_length = 365
+day_length = 24
+
+if integer > 60*60*day_length*year_length:
     print('More than 1 year')
-if integer > 60*60*24:
+elif integer > 60*60*day_length:
     print('More than 1 day')
+else:
+    print('Less than 1 day')
 
 # DO_NOT_EDIT_ANYTHING_BELOW_THIS_LINE
