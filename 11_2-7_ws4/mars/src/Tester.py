@@ -107,7 +107,7 @@ file2.txt"""
 integer2.txt"""
 
     expected_output = """\
-"""
+Less than 1 day"""
     return 2, input_to_test, integer_to_test, expected_output
 
 
@@ -120,7 +120,7 @@ file3.txt"""
 integer3.txt"""
 
     expected_output = """\
-More than 1 day"""
+More than 1 year"""
     return 3, input_to_test, integer_to_test, expected_output
 
 
@@ -131,4 +131,3 @@ if __name__ == "__main__":
     runtest(executable_file, test1())
     runtest(executable_file, test2())
     runtest(executable_file, test3())
-
