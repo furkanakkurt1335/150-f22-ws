@@ -1,0 +1,84 @@
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width initial-scale=1" />
+    <link rel="stylesheet" href="css/question.css" />
+    <title>Question</title>
+  </head>
+
+  <body>
+    <div>
+      <div>
+        <h1>
+          <span>Workshop Question 4: Mathematical Operators with File I/O</span>
+        </h1>
+
+        <p>
+          <span>
+            Please read <a href="ReadMe.html"> important information</a> first.
+          </span>
+        </p>
+
+        <h2>
+          <span> Description </span>
+        </h2>
+
+        <hr />
+
+        <p>
+          You will be given 2 files as input in order in the forms of
+          <i>'time*.txt'</i> and <i>'offset*.txt'</i> (* represents a number).
+          You are supposed to read the first file (<i>'time*.txt'</i>) entirely.
+          This file's content will represent time of a day as a string (e.g.
+          '1050' meaning 10:50 AM, using a 24-hour system), you may convert it
+          to an integer and perform operations to store the time's hour and
+          minute values in 2 different variables. You are then supposed to read
+          from the second file (<i>'offset*.txt'</i>). The content of the second
+          file represents seconds and you may store it in a variable as an
+          integer. You are requested to calculate what the time would be (given
+          in the first file) after adding the seconds (given in the second file)
+          to it. You are requested to print a string, according to the following
+          instructions:
+        </p>
+        <p>
+          1. If the resultant time is before noon (12:00), print "Before noon".
+        </p>
+        <p>
+          2. If the resultant time is after noon (12:00), print "After noon".
+        </p>
+        <p>3. If the resultant time is just noon (12:00), print "High noon".</p>
+        <p>In the end, only 1 line will be printed.</p>
+
+        <hr />
+
+        <table>
+          <tr>
+            <th>Input</th>
+            <th>Output</th>
+          </tr>
+
+          <tr>
+            <td>time1.txt and offset1.txt</td>
+            <td>
+              <pre>Before noon</pre>
+            </td>
+          </tr>
+
+          <tr>
+            <td>time2.txt and offset2.txt</td>
+            <td>
+              <pre>After noon</pre>
+            </td>
+          </tr>
+
+          <tr>
+            <td>time3.txt and offset3.txt</td>
+            <td>
+              <pre>High noon</pre>
+            </td>
+          </tr>
+        </table>
+      </div>
+    </div>
+  </body>
+</html>
