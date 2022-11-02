@@ -39,12 +39,18 @@ print(int(remaining_seconds_from_minute))
 # DO_NOT_EDIT_ANYTHING_BELOW_THIS_LINE
 #----------------------------------------------------------------
 
-# If he has been on Shinsoo for more than or equal to 1 Shinsoo century (100 Shinsoo years), print "longer than a Shinsoo century" on the separate line.
+# If he has been on Shinsoo for more than or equal to 1 Shinsoo millenium (1000 Shinsoo years), print "longer than a millenium" on the separate line.
+# Else if he has been on Shinsoo for more than or equal to 1 Shinsoo century (100 Shinsoo years), print "longer than a century" on the separate line.
+# Else, print "less than a century" on the separate line.
 #----------------------------------------------------------------
 # DO_NOT_EDIT_ANYTHING_ABOVE_THIS_LINE
 
-if(counter / one_year) >= 100 :
+if(counter / one_year) >= 1000 :
+    print("longer than a millenium")
+elif(counter/one_year) >= 100 :
     print("longer than a century")
+else:
+    print("less than a century")
 
 # DO_NOT_EDIT_ANYTHING_BELOW_THIS_LINE
 #----------------------------------------------------------------

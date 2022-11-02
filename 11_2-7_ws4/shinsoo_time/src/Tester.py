@@ -108,6 +108,7 @@ file2.txt"""
 15
 59
 59
+less than a century
 """
     return 2, input_to_test, expected_output
 
@@ -122,7 +123,7 @@ file3.txt"""
 48
 46
 39
-longer than a century
+longer than a millenium
 """
     return 3, input_to_test, expected_output
 
