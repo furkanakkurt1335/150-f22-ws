@@ -88,6 +88,7 @@ file1.txt"""
 
     expected_output = """\
 8
+greater than or equal to one tenth of the sum
 """
     return 1, input_to_test, expected_output
 
@@ -98,7 +99,8 @@ def test2():
 file2.txt"""
 
     expected_output = """\
-150
+6
+less than one tenth of the sum
 """
     return 2, input_to_test, expected_output
 
@@ -109,7 +111,7 @@ file3.txt"""
 
     expected_output = """\
 6720
-more than or equal to the sum
+greater than or equal to the sum
 """
     return 3, input_to_test, expected_output
 
