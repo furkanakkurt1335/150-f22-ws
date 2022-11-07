@@ -33,7 +33,7 @@ min_len = 60
 
 res_hour = (hour + (offset // (min_len*hour_len))) % 24
 res_min = (minutes + (offset // (min_len))) % 60
-if res_min < minutes:
+if res_min <= minutes:
     res_hour += 1
 
 if res_hour > 12:
