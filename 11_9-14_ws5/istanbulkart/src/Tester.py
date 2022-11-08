@@ -89,7 +89,11 @@ file1.txt"""
 
     expected_output = """\
 Monthly service
-10.68"""
+48.08
+Monthly service
+116.96
+Monthly service
+181.64"""
     return 1, input_to_test, expected_output
 
 
@@ -100,7 +104,11 @@ file2.txt"""
 
     expected_output = """\
 Pay-as-you-go system
-295.20"""
+19.24
+Monthly service
+20.12
+Monthly service
+57.08"""
     return 2, input_to_test, expected_output
 
 
@@ -111,7 +119,11 @@ file3.txt"""
 
     expected_output = """\
 Pay-as-you-go system
-220.74"""
+64.12
+Pay-as-you-go system
+44.44
+Pay-as-you-go system
+25.96"""
     return 3, input_to_test, expected_output
 
 

@@ -1,3 +1,2 @@
-Worker
-11
-3
+Student
+6
