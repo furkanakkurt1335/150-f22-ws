@@ -89,7 +89,11 @@ file1.txt"""
 
     expected_output = """\
 Monthly service
-4.90"""
+65.50
+Monthly service
+263.50
+Monthly service
+368.50"""
     return 1, input_to_test, expected_output
 
 
@@ -99,8 +103,12 @@ def test2():
 file2.txt"""
 
     expected_output = """\
-Monthly service
-107.30"""
+Pay-as-you-go system
+62.60
+Pay-as-you-go system
+53.30
+Pay-as-you-go system
+48.50"""
     return 2, input_to_test, expected_output
 
 
@@ -110,8 +118,12 @@ def test3():
 file3.txt"""
 
     expected_output = """\
-Pay-as-you-go system
-66.80"""
+Monthly service
+6.70
+Monthly service
+158.50
+Monthly service
+239.00"""
     return 3, input_to_test, expected_output
 
 

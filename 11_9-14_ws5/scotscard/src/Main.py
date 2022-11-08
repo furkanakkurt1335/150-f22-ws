@@ -1,5 +1,5 @@
-# Read the type of card string and both of the integers (day and vehicle counts) from the file
-# Please use the `strip` function for removing any new line characters ('\n') from the string in the first line
+# Read the type of card string and the integer for the day count from the file
+# Please use the `strip` function for removing any whitespace characters ('\n', ' ', etc.) from the string in the first line (Student or Worker)
 # `strip` example usage:
 #   our_string = ' String with new line \n'
 #   string_stripped = our_string.strip()
@@ -10,7 +10,6 @@ filename = input()
 f = open(filename, 'r')
 card_type = f.readline().strip()
 day_count = int(f.readline())
-vehicle_count = int(f.readline())
 
 # DO_NOT_EDIT_ANYTHING_BELOW_THIS_LINE
 
@@ -27,7 +26,6 @@ worker_third = 1.75
 worker_monthly = 186.50
 
 # DO_NOT_EDIT_ANYTHING_BELOW_THIS_LINE
-
 
 # You can return True if the card type is 'Student' here ; return False if not
 def is_student(card_type):
@@ -51,28 +49,29 @@ else:
     first, second, third, monthly = worker_first, worker_second, worker_third, worker_monthly
 # DO_NOT_EDIT_ANYTHING_BELOW_THIS_LINE
 
-# You can calculate if the individual payment is higher than monthly payment or not here and print accordingly.
-# If the monthly service is cheaper, print 'Monthly service'
-# Or if the pay-as-you-go system is cheaper, print 'Pay-as-you-go system'
-# DO_NOT_EDIT_ANYTHING_ABOVE_THIS_LINE
-if vehicle_count == 1:
-    individual_payment = (day_count*first)*2
-elif vehicle_count == 2:
-    individual_payment = (day_count*(first+second))*2
-else:
-    individual_payment = (day_count*(first+second+third))*2
-if individual_payment < monthly:
-    print('Pay-as-you-go system')
-else:
-    print('Monthly service')
-
-# DO_NOT_EDIT_ANYTHING_BELOW_THIS_LINE
-
-# Create the function calculate_saved_amount here
+# Create the function calculate_saved_amount here. This function returns the saved amount (positive)
 def calculate_saved_amount(individual_payment, monthly):
 # DO_NOT_EDIT_ANYTHING_ABOVE_THIS_LINE
     return abs(individual_payment - monthly)
 
 # DO_NOT_EDIT_ANYTHING_BELOW_THIS_LINE
-# We print the saved amount, whatever the choice is (monthly or pay-as-you-go)
-print("%.2f" % (calculate_saved_amount(individual_payment, monthly)))
+
+# You can calculate if the individual payment is higher than monthly payment, with 1, 2 or 3 vehicles ('vasıta'), here and print accordingly.
+# If the monthly service is cheaper, print 'Monthly service'
+# Or if the pay-as-you-go system is cheaper, print 'Pay-as-you-go system'
+# You are requested to print 3 times (one for 1 vehicle, one for 2 and one for 3) in this part
+for i in range(1, 4):
+# DO_NOT_EDIT_ANYTHING_ABOVE_THIS_LINE
+    if i == 1:
+        individual_payment = (day_count*first)*2
+    elif i == 2:
+        individual_payment = (day_count*(first+second))*2
+    else:
+        individual_payment = (day_count*(first+second+third))*2
+    if individual_payment < monthly:
+        print('Pay-as-you-go system')
+    else:
+        print('Monthly service')
+# DO_NOT_EDIT_ANYTHING_BELOW_THIS_LINE
+    # We print the saved amount, whatever the choice is (monthly or pay-as-you-go)
+    print("%.2f" % (calculate_saved_amount(individual_payment, monthly)))
