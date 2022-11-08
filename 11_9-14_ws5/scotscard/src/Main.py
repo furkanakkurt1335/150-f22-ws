@@ -37,13 +37,13 @@ def is_student(card_type):
 
 # DO_NOT_EDIT_ANYTHING_BELOW_THIS_LINE
 
-# You can store your price variables if the card type is student here. (e.g. first payment is 3.74)
+# You can store your price variables if the card type is student here. (e.g. first payment is 2.1)
 if is_student(card_type):
 # DO_NOT_EDIT_ANYTHING_ABOVE_THIS_LINE
     first, second, third, monthly = student_first, student_second, student_third, student_monthly
 
 # DO_NOT_EDIT_ANYTHING_BELOW_THIS_LINE
-# You can store your price variables if the card type is worker here. (first payment is 7.67)
+# You can store your price variables if the card type is worker here. (first payment is 4.2)
 else:
 # DO_NOT_EDIT_ANYTHING_ABOVE_THIS_LINE
     first, second, third, monthly = worker_first, worker_second, worker_third, worker_monthly
