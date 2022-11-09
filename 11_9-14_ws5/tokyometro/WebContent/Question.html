@@ -29,13 +29,13 @@
       <p>
 
         A person uses transportation to go to work or their school. This transportation system has personal cards that
-        people use to pay for their trips. Students pay less money. The cards are capable of storing money, as well as
-        providing a monthly service of 200 usages. In this monthly service, people pay a certain amount of money and
-        they get 200 usages for the month. We want to calculate if they would be better off using the monthly service or
-        just pay as they go, meaning they pay for each trip individually. This transportation system also allows
-        secondary and tertiary (3) usages at discount prices. These discounts are for when somebody pays for the
-        transportation system again in a couple hours from their last time. This is useful if somebody uses
-        transportation and reaches their destination by more than 1 vehicle.
+        people use to pay for their trips. Students pay less money. We want to calculate how much they would pay in a
+        month. This
+        transportation system requires that passengers pay for how many stations they go in a single trip.
+
+        Note: They calculate how many stations they used the transportation system before leaving by receiving the
+        highest amount (750 in a student's case) on entrance and giving back if they use the system less than the
+        highest amount.
 
       </p>
 
@@ -48,51 +48,37 @@
         </tr>
 
         <tr>
-          <td>First payment</td>
-          <td>750</td>
-          <td>1500</td>
-        </tr>
-
-        <tr>
-          <td>Second payment</td>
-          <td>600</td>
-          <td>1200</td>
-        </tr>
-        <tr>
-          <td>Third payment</td>
+          <td>3 stations or less</td>
           <td>400</td>
           <td>800</td>
         </tr>
+
         <tr>
-          <td>Monthly payment</td>
-          <td>17300</td>
-          <td>49310</td>
+          <td>4 to 8 stations</td>
+          <td>600</td>
+          <td>1200</td>
+        </tr>
+
+        <tr>
+          <td>9 or more stations</td>
+          <td>750</td>
+          <td>1500</td>
         </tr>
       </table>
 
       <p>
 
         You will be given an input file. This file's content is as follows: the first line is a string of <span
-          style="font-family: Courier">'Student'</span> or
-        <span style="font-family: Courier">'Worker'</span> indicating the person's card, the second line is for how many
-        days a person uses the transportation
-        system in a month (integer). Please assume, this person goes to their work or school in the morning and goes
-        back home
-        in
-        the evening.
+          style="font-family: Courier">'Student'</span> or <span style="font-family: Courier">'Worker'</span> indicating
+        the person's card, the second line is for how many days a person uses the transportation system in a month
+        (integer). Please assume, this person goes to their work or school in the morning and goes back home in the
+        evening.
+
       </p>
       <p>
 
-        You are requested to output (print) as follows for all 3 cases of usage (1 vehicle, 2 vehicles or 3 vehicles):
-        If they are better off using the monthly service. Print <span style="font-family: Courier">'Monthly
-          service'</span> in the first line. Then, print how
-        much
-        money they save by using the monthly service instead of the pay-as-you-go system.
-        On the other hand, if they are better off using the pay-as-you-go system, print <span
-          style="font-family: Courier">'Pay-as-you-go system'</span> in the
-        first line. Then, print how much money they save by using the pay-as-you-go system instead of the monthly
-        service. The last print statement of the saved amount is in <span style="font-family: Courier">'Main.py'</span> already, so you don't have to write it.
-        At the end, you print for all 3 cases of usage. First for if the person uses 1 vehicle to go to their workplace or school; second for if the person uses 2 vehicles; and third for if they use 3 vehicles.
+        You are requested to output (print) how much money they pay in a month for all 3 cases of usage (3 stations or less, 4 to 8 stations or, 9 or more stations) in separate lines.
+
       </p>
 
       <hr />
@@ -106,36 +92,27 @@
         <tr>
           <td>file1.txt</td>
           <td>
-            <pre>Pay-as-you-go system
-5300.00
-Monthly service
-4300.00
-Monthly service
-10700.00</pre>
+            <pre>10400
+15600
+19500</pre>
           </td>
         </tr>
 
         <tr>
           <td>file2.txt</td>
           <td>
-            <pre>Pay-as-you-go system
-40310.00
-Pay-as-you-go system
-33110.00
-Pay-as-you-go system
-28310.00</pre>
+            <pre>8800
+13200
+16500</pre>
           </td>
         </tr>
 
         <tr>
           <td>file3.txt</td>
           <td>
-            <pre>Monthly service
-6700.00
-Monthly service
-25900.00
-Monthly service
-38700.00</pre>
+            <pre>8000
+12000
+15000</pre>
           </td>
         </tr>
       </table>

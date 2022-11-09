@@ -14,22 +14,19 @@ day_count = int(f.readline())
 
 # DO_NOT_EDIT_ANYTHING_BELOW_THIS_LINE
 
-# You can create the price variables below (e.g. student first payment is 750)
+# You can create the price variables below (e.g. for a student, 3 stations or less is 400)
 # You can define a function to return True if the card type is 'Student' here ; return False otherwise
-# You can store your price variables if the card type is student or worker here. (e.g. first payment is 750 for students and 1500 for workers)
-# Also define the function calculate_saved_amount here. This function returns the saved amount (positive)
+# You can store your price variables if the card type is student or worker here. (e.g. 3 stations or less is 400 for students and 800 for workers)
 
 # DO_NOT_EDIT_ANYTHING_ABOVE_THIS_LINE
 
-student_first = 750
-student_second = 600
-student_third = 400
-student_monthly = 17300
+student_three = 400
+student_six = 600
+student_nine = 750
 
-worker_first = 1500
-worker_second = 1200
-worker_third = 800
-worker_monthly = 49310
+worker_three = 800
+worker_six = 1200
+worker_nine = 1500
 
 def is_student(card_type):
     if card_type == 'Student':
@@ -38,41 +35,26 @@ def is_student(card_type):
         return False
 
 if is_student(card_type):
-    first, second, third, monthly = student_first, student_second, student_third, student_monthly
+    three, six, nine = student_three, student_six, student_nine
 else:
-    first, second, third, monthly = worker_first, worker_second, worker_third, worker_monthly
-
-def calculate_saved_amount(individual_payment, monthly):
-    return abs(individual_payment - monthly)
+    three, six, nine = worker_three, worker_six, worker_nine
 
 # DO_NOT_EDIT_ANYTHING_BELOW_THIS_LINE
 
-# You can calculate if the individual payment is higher than monthly payment, with 1, 2 or 3 vehicles ('vasıta'), here and print accordingly.
-# If the monthly service is cheaper, print 'Monthly service'
-# Or if the pay-as-you-go system is cheaper, print 'Pay-as-you-go system'
-# You are requested to print 3 times (one for 1 vehicle, one for 2 and one for 3) in this part
-
+# You can print here: how much money they pay for all 3 cases of usage (3 stations or less, 4 to 8 stations or, 9 or more stations) in separate lines.
+# You are expected to define a for loop in this section
 # DO_NOT_EDIT_ANYTHING_ABOVE_THIS_LINE
 
 for i in range(1, 4):
 
     if i == 1:
-        individual_payment = (day_count*first)*2
+        print(three*day_count)
 
     elif i == 2:
-        individual_payment = (day_count*(first+second))*2
+        print(six*day_count)
 
     else:
-        individual_payment = (day_count*(first+second+third))*2
+        print(nine*day_count)
 
-    if individual_payment < monthly:
-        print('Pay-as-you-go system')
-
-    else:
-        print('Monthly service')
 
 # DO_NOT_EDIT_ANYTHING_BELOW_THIS_LINE
-    # We print the saved amount, whatever the choice is (monthly or pay-as-you-go)
-    # You are expected to define a for loop in the section above
-    # so the following line is indented intentionally to be executed within the for loop body
-    print("%.2f" % (calculate_saved_amount(individual_payment, monthly)))

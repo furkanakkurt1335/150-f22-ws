@@ -1,2 +1,2 @@
-Student
-30
+Worker
+5
