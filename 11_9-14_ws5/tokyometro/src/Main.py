@@ -48,13 +48,13 @@ else:
 for i in range(1, 4):
 
     if i == 1:
-        print(three*day_count)
+        print(three*day_count*2)
 
     elif i == 2:
-        print(six*day_count)
+        print(six*day_count*2)
 
     else:
-        print(nine*day_count)
+        print(nine*day_count*2)
 
 
 # DO_NOT_EDIT_ANYTHING_BELOW_THIS_LINE

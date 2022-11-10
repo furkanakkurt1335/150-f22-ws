@@ -88,9 +88,9 @@ def test1():
 file1.txt"""
 
     expected_output = """\
-10400
-15600
-19500"""
+6400
+9600
+12000"""
     return 1, input_to_test, expected_output
 
 
@@ -112,9 +112,9 @@ def test3():
 file3.txt"""
 
     expected_output = """\
-8000
-12000
-15000"""
+15200
+22800
+28500"""
     return 3, input_to_test, expected_output
 
 
