@@ -8,8 +8,8 @@ n = int(file.readline())
 
 # DO_NOT_EDIT_ANYTHING_BELOW_THIS_LINE
 #----------------------------------------------------------------
-def Prime_Factorial(n):
-#You have to code a function that finds all prime divisors of this number n and prints it in ascending order. If a number n is dividing a prime number several times, you must print that prime number as much as it is divided.
+def prime_factorial(n):
+# You have to code a function that finds all prime divisors of the number n and prints them in ascending order. If a prime number divides `n` several times, you must print that prime number as much as it divides `n`.
 
 #----------------------------------------------------------------
 # DO_NOT_EDIT_ANYTHING_ABOVE_THIS_LINE
@@ -30,5 +30,5 @@ def Prime_Factorial(n):
 # DO_NOT_EDIT_ANYTHING_BELOW_THIS_LINE
 #----------------------------------------------------------------
 
-Prime_Factorial(n)
+prime_factorial(n)
 
