@@ -88,8 +88,8 @@ def test1():
 file1.txt"""
 
     expected_output = """\
-Result: 29
-Count: 9"""
+Result: 15127
+Count: 5167"""
     return 1, input_to_test, expected_output
 
 
@@ -99,8 +99,8 @@ def test2():
 file2.txt"""
 
     expected_output = """\
-Result: 843
-Count: 287"""
+Result: 123
+Count: 41"""
     return 2, input_to_test, expected_output
 
 
@@ -110,8 +110,8 @@ def test3():
 file3.txt"""
 
     expected_output = """\
-Result: 76
-Count: 25"""
+Result: 322
+Count: 109"""
     return 3, input_to_test, expected_output
 
 
