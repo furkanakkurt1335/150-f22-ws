@@ -29,7 +29,7 @@ def phobicnacci(number):
 
 count = 0
 
-# You need to call the `bucci` function below
+# You need to call the `phobicnacci` function below
 # DO_NOT_EDIT_ANYTHING_ABOVE_THIS_LINE
 
 res = phobicnacci(n)
