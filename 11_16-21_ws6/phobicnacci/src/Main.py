@@ -8,7 +8,7 @@ s2 = int(f.readline())
 n = int(f.readline())
 
 # DO_NOT_EDIT_ANYTHING_BELOW_THIS_LINE
-def bucci(number):
+def phobicnacci(number):
     global count
     count += 1
 # DO_NOT_EDIT_ANYTHING_ABOVE_THIS_LINE
@@ -17,8 +17,8 @@ def bucci(number):
     elif number == 2:
         return s2
     else:
-        first = bucci(number-1)
-        second = bucci(number-2)
+        first = phobicnacci(number-1)
+        second = phobicnacci(number-2)
         if(first % 2 == 0 and second % 2 == 0):
             return int((first/2)) + (2*second+1)
         else:
@@ -32,7 +32,7 @@ count = 0
 # You need to call the `bucci` function below
 # DO_NOT_EDIT_ANYTHING_ABOVE_THIS_LINE
 
-res = bucci(n)
+res = phobicnacci(n)
 print('Result:', res)
 
 # DO_NOT_EDIT_ANYTHING_BELOW_THIS_LINE
