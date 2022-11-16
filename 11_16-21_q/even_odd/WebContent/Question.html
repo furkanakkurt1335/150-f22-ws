@@ -25,13 +25,49 @@
 
         <hr />
 
+        First, get the file path with input() and do not use any prompt messages. 
         You are supposed to read two integers `n` (2 digit number) and `t` from
-        a file. Then, you are expected to write a recursive function under the
-        definition of `even_odd` given to you. The first even_odd number (at
-        t=1) is the reverse of `n` if `n` is even, 11 more if `n` is odd.
-        Even_odd numbers will go on until they become a three digit number. The
-        `even_odd` function must return the `t`'th Even_odd number of `n`. Note:
-        Using recursion is mandatory; other solutions are not accepted.
+        a file where n specifies the number and t denotes the <i>turn</i>. 
+        Then, you are expected to write a recursive function under the
+        definition of `even_odd` given to you. The `even_odd` function must 
+        return the `t`'th Even_odd number of `n`.
+        
+        The first even_odd number (at t=1) is the reverse of `n` if `n` is even, 
+        11 more if `n` is odd. Even_odd numbers will go on until they become a 
+        three digit number. Note: Using recursion is mandatory; other solutions are 
+        not accepted.
+
+        The following table is just for illustration purposes. You are not supposed 
+        to write intermediate results on the screen.
+        
+        Input: n=13, t=5 
+        <table>
+          <tr>
+            <td>5</td>
+            <td>13</td>
+          </tr>
+          <tr>
+            <td>4</td>
+            <td>24</td>
+          </tr>
+          <tr>
+            <td>3</td>
+            <td>42</td>
+          </tr>
+          <tr>
+            <td>2</td>
+            <td>24</td>
+          </tr>
+          <tr>
+            <td>1</td>
+            <td>42</td>
+          </tr>
+          <tr>
+            <td>Res:</td>
+            <td>24</td>
+          </tr>
+        </table>
+
 
         <hr />
 
