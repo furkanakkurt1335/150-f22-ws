@@ -18,3 +18,7 @@ for item in list:
     if type(item)==str or type(item)==int:
         print (item, end=" ")
 ```
+
+## Note
+
+Please explain the `type` function in the `Question.html` or `Main.py` files, as they may not have learned it.
