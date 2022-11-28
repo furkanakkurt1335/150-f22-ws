@@ -21,4 +21,4 @@ for item in list:
 
 ## Note
 
-Please explain the `type` function in the `Question.html` or `Main.py` files, as they may not have learned it.
+Please explain the `isnumeric()` function in the `Question.html` or `Main.py` files, as they may not have learned it.
