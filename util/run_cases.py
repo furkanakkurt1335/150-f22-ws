@@ -28,5 +28,5 @@ if __name__ == "__main__":
         data = '../testcases/file_{i}.txt'.format(i=i)
         with open('../testcases/output{i}'.format(i=i)) as f:
             output_t = f.read()
-        if output_t != runtest(data):
+        if output_t.strip() != runtest(data).strip():
             print('Error with input', i)

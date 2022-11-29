@@ -1,12 +1,14 @@
-import random
+filename = input()
+f = open(filename, 'r')
 
-seed = int(input())
+seed = int(f.readline())
+import random
 random.seed(seed)
 
 # DO_NOT_EDIT_ANYTHING_ABOVE_THIS_LINE
 
-first_number = int(input())
-second_number = int(input())
+first_number = int(f.readline())
+second_number = int(f.readline())
 
 if (first_number < 0 or first_number > second_number):
     print("INVALID INPUT")

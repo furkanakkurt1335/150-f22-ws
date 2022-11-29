@@ -32,7 +32,6 @@ import sys
 
 
 def runtest(executable_file, test_data):
-    # Instructors need not change this method, if you do please let us know.
     command = [sys.executable, executable_file]
 
     test_num = test_data[0]
@@ -42,7 +41,6 @@ def runtest(executable_file, test_data):
     p = subprocess.Popen(command, stdout=subprocess.PIPE,
                          stdin=subprocess.PIPE)
 
-    #out, err = p.communicate(b"10\nsecondinput")
     out, err = p.communicate(bytes(input_to_test.encode("utf-8")))
     answer = out.decode("utf-8").rstrip()
     print("_______________________________________________________")
@@ -90,6 +88,7 @@ def test1():
 file1.txt"""
 
     expected_output = """\
+INVALID INPUT
 """
     return 1, input_to_test, expected_output
 
@@ -100,6 +99,30 @@ def test2():
 file2.txt"""
 
     expected_output = """\
+10
+25
+10000000000000000000000000
+0
+0
+1
+0
+0
+1
+0
+0
+1
+0
+0
+1
+0
+0
+1
+0
+0
+1
+0
+0
+1
 """
     return 2, input_to_test, expected_output
 
@@ -110,6 +133,7 @@ def test3():
 file3.txt"""
 
     expected_output = """\
+INVALID INPUT
 """
     return 3, input_to_test, expected_output
 
