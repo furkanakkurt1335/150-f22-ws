@@ -1,0 +1,200 @@
+<html>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width initial-scale=1" />
+  <link rel="stylesheet" href="css/question.css" />
+  <title>Question</title>
+</head>
+
+<body>
+  <div>
+    <div>
+      <h1>
+        <span>Workshop Question 7: PI</span>
+      </h1>
+
+      <p>
+        <span>
+          Please read <a href="ReadMe.html"> important information</a> first.
+        </span>
+      </p>
+
+      <h2>
+        <span> Description </span>
+      </h2>
+
+      <hr />
+
+      <p>
+        In this question, you are asked to print numbers according to the
+        following:
+      </p>
+
+      <p>
+        You need to read a file with 3 integers.
+        The file starts with an integer seed value. <br /> You need to read two
+        additional positive integers from the file as the first number (f) and
+        second number (s), respectively.<br /> Check if the second one is less than
+        the first one or any of the numbers are negative. If so, display
+        <strong>INVALID INPUT</strong> and call `exit()`.<br /><br /> Generate a single
+        random integer between 15 and 50 as the repetition count. <br />Output the
+        first number followed by the second number in individual lines. <br />Repeat
+        the following as much as the repetition count:<br /> 1. If the current iteration
+        is a multiple of 3, calculate the result as
+        <strong> 2·f subtracted from half of s </strong>. <br /> 2. If the current iteration is one more than
+        a multiple of 3, calculate the result as </strong> the sum of f and half of s </strong>. <br />
+        3. If the current iteration
+        is two more than a multiple of 3, calculate the result as
+        <strong> f * PI (use <code>math.pi</code>) </strong> Output the result in an individual line.<br />
+        At the end, convert the result into an integer, for all 3 cases above.<br />
+        Then, set the first number to be the current second number and set the
+        second number to be the calculated result. <br /> Continue with the next
+        iteration.
+        <br />
+        <br />
+        DO NOT write any prompt messages inside the input functions.
+        Be careful with your output, such as spacing in the output or upper
+        case messages.
+      </p>
+
+      <hr />
+
+      <table>
+        <tr>
+          <th>Input</th>
+          <th>Output</th>
+        </tr>
+
+        <tr>
+          <td>file1.txt</td>
+          <td>
+            <pre>3
+12
+0
+12
+0
+24
+12
+75
+-13
+68
+-40
+156
+38
+490
+-169
+405
+-530
+1075
+7
+3377
+-1674
+2540
+-5259
+7709
+-1404
+24218
+-14917
+16759
+-46863
+56949
+-18388
+178910
+-126231
+115794
+-396566
+429871
+-181630
+1350479
+-1038499
+831229
+-3262540
+3293728
+-1615676
+10347551
+-8405127
+6144987
+-26405485
+25492716
+</pre>
+          </td>
+        </tr>
+
+        <tr>
+          <td>file2.txt</td>
+          <td>
+            <pre>5
+12
+4
+14
+12
+22
+23
+69
+11
+74
+34
+131
+99
+411
+-7
+407
+-21
+824
+391
+2588
+-512
+2332
+-1608
+5468
+1126
+17178
+-6337
+14009
+-19908
+37972
+-922
+119292
+-61490
+88547
+-193176
+273682
+-56335
+859797
+-542568
+588513
+-1704527
+</pre>
+          </td>
+        </tr>
+
+        <tr>
+          <td>file3.txt</td>
+          <td>
+            <pre>3
+15
+-1
+14
+-3
+29
+11
+91
+-23
+79
+-72
+194
+25
+609
+-254
+482
+-797
+</pre>
+          </td>
+        </tr>
+      </table>
+    </div>
+  </div>
+</body>
+
+</html>
