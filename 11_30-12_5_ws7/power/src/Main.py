@@ -1,8 +1,9 @@
+import random
+
 filename = input()
 f = open(filename, 'r')
 
 seed = int(f.readline())
-import random
 random.seed(seed)
 
 # DO_NOT_EDIT_ANYTHING_ABOVE_THIS_LINE
