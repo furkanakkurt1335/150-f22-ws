@@ -1,14 +1,14 @@
 import random
 
 filename = input()
-f = open(filename, 'r')
-seed = int(f.readline())
+fh = open(filename, 'r')
+seed = int(fh.readline())
 random.seed(seed)
 
 # DO_NOT_EDIT_ANYTHING_ABOVE_THIS_LINE
 
-first_number = int(f.readline())
-second_number = int(f.readline())
+first_number = int(fh.readline())
+second_number = int(fh.readline())
 
 if (first_number < 0 or first_number > second_number):
     print("INVALID INPUT")
@@ -19,8 +19,8 @@ repeat = random.randint(5, 20)
 print(first_number)
 print(second_number)
 
+new_number = 0
 for i in range(repeat):
-
     if i % 4 == 0:
         new_number = (3 * first_number) + (4 * second_number)
 

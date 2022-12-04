@@ -10,7 +10,7 @@
     <div>
       <div>
         <h1>
-          <span>Workshop Question 7: TOPIC</span>
+          <span>Workshop Question 7: Quadruple</span>
         </h1>
 
         <p>
@@ -29,28 +29,27 @@
           In this question, you are asked to print numbers according to the
           following:
         </p>
-
+  
         <p>
-          The program receives an integer seed value You need to receive two
-          additional positive integers from the user as the first number (f) and
-          second number (s), respectively. Check if the second one is less than
-          the first one or any of the numbers are negative. If so, display
-          <strong>INVALID INPUT</strong> and call exit(). Generate a single
-          random integer between 5 and 20 as the repetition count. Output the
-          first number followed by the second number in individual lines. Repeat
-          the following as much as the repetition count: If the current iteration
-          is a multiple of 4, calculate the result as
-          <strong> (3 x f) + (4 x s)</strong> If the current iteration
-          is one more than a multiple of 4, calculate the result as
-          <strong> 4 x f + s^(f % 3) </strong>If the current iteration is two more than
-          a multiple of 4, calculate the result as the remainder of
-          <strong> 2 x f + 2 x s</strong> divided by 500. If the current iteration
-          is three more than a multiple of 4, calculate the result as
-          <strong> (f % 100) + (s % 100)</strong>  Output the result in an individual line.
-          Set the first number to be the current second number and set the
-          second number to be the calculated result. Continue with the next
-          iteration.
-          <br/>
+          You need to read a file with 3 integers.
+          The file starts with an integer seed value. <br>
+          You need to read two additional positive integers from the file as the first number (f) and second number (s), respectively. <br>
+          Check if the second one is less than the first one or any of the numbers are negative. If so, display
+          <strong>INVALID INPUT</strong> and call `exit()`.<br><br> 
+          
+          Generate a single random integer between 15 and 50 as the repetition count. <br>
+          Output the first number followed by the second number in individual lines. <br>
+          
+          Repeat the following as much as the repetition count:<br>
+          1. If the current iteration is a multiple of 4, calculate the result as <strong> 3·f + 4·s </strong>. <br>
+          2. If the current iteration is one more than a multiple of 4, calculate the result as </strong> 4·f + s^(f % 3) </strong>. <br>
+          3. If the current iteration is two more than a multiple of 4, calculate the result as the remainder of <strong> 2·f + 2·s </strong> divided by 500. <br>
+          4. If the current iteration is three more than a multiple of 4, calculate the result as the remainder of <strong> (f % 100) + (s % 100) </strong>. <br>
+          
+          Output the result in an individual line.<br>
+          At the end, convert the result into an integer, for all 4 cases above.<br>
+          Then, set the first number to be the current second number and set the second number to be the calculated result. <br> Continue with the next iteration. <br> <br>
+  
           DO NOT write any prompt messages inside the input functions.
           Be careful with your output, such as spacing in the output or upper
           case messages.
@@ -67,21 +66,54 @@
           <tr>
             <td>file1.txt</td>
             <td>
-              <pre>$OUTPUT1</pre>
+              <pre>2
+5
+26
+696
+444
+140
+1892
+3580224
+232
+56
+920
+846624
+88</pre>
             </td>
           </tr>
 
           <tr>
             <td>file2.txt</td>
             <td>
-              <pre>$OUTPUT2</pre>
+              <pre>12
+14
+92
+8520
+224
+44
+848
+719280
+256
+136
+1312
+1856</pre>
             </td>
           </tr>
 
           <tr>
             <td>file3.txt</td>
             <td>
-              <pre>$OUTPUT3</pre>
+              <pre>23
+60
+309
+241
+100
+41
+464
+215460
+348
+108
+1476</pre>
             </td>
           </tr>
         </table>
