@@ -1,0 +1,88 @@
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width initial-scale=1" />
+    <link rel="stylesheet" href="css/question.css" />
+    <title>Question</title>
+  </head>
+
+  <body>
+    <div>
+      <div>
+        <h1>
+          <span>Workshop Question 10: NAME</span>
+        </h1>
+
+        <p>
+          <span>
+            Please read <a href="ReadMe.html"> important information</a> first.
+          </span>
+        </p>
+
+        <h2>
+          <span> Description </span>
+        </h2>
+
+        <hr />
+
+        <p>
+          In this question, you are given a file with a body of text.
+          You need to remove dots and commas from the text, and lower all the letters in the text.
+          Then, you need to count the occurrences of each word (text is split by <code>split(' ')</code>).
+          If an occurrence of a word is higher than 2, you need to remove those from your counting structure.
+          You need to have a list of the remaining words, you need to sort them and use only the list members after the 2nd member for the task below (if the list length doesn't allow you, only output the last task below).
+          You are then asked to output the remaining words (sorted and then first 2 members left out) and their occurrence counts in separate lines, as seen below.
+          Afterwards, you need to output the resulting text (occurrences below 2 not printed, lowercased and without dots and commas).
+        </p>
+
+        <hr />
+
+        <table>
+          <tr>
+            <th>Input</th>
+            <th>Output</th>
+          </tr>
+
+          <tr>
+            <td>file1.txt</td>
+            <td>
+              <pre>binary 3
+half 3
+in 3
+is 4
+search 7
+target 6
+the 15
+to 3
+value 4
+in computer science binary search also known as half-interval search logarithmic or binary chop is a algorithm that finds the position of a target value within sorted array compares the target value to middle element of array if they are not equal half in which cannot lie is eliminated and continues on remaining half again taking middle element to compare and repeating this until found if ends with remaining being empty not
+</pre>
+            </td>
+          </tr>
+
+          <tr>
+            <td>file2.txt</td>
+            <td>
+              <pre>of 4
+science 3
+computer science is the study of computation automation and information computer science spans theoretical disciplines (such as algorithms theory of computation information theory and automation) to practical disciplines (including the design implementation hardware software) is generally considered an area academic research distinct from programming
+</pre>
+            </td>
+          </tr>
+
+          <tr>
+            <td>file3.txt</td>
+            <td>
+              <pre>as 5
+automated 3
+of 3
+to 5
+in mathematics and computer science an algorithm is a finite sequence of rigorous instructions typically used to solve a class of specific problems or to perform computation algorithms are used as specifications for performing calculations and data processing more advanced algorithms can perform automated deductions (referred as automated reasoning) use mathematical logical tests divert the code execution through various routes (referred decision-making) using human characteristics descriptors machines in metaphorical ways was already practiced by alan turing with terms such "memory" "search" "stimulus"
+</pre>
+            </td>
+          </tr>
+        </table>
+      </div>
+    </div>
+  </body>
+</html>
