@@ -1,0 +1,116 @@
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width initial-scale=1" />
+    <link rel="stylesheet" href="css/question.css" />
+    <title>Question</title>
+  </head>
+
+  <body>
+    <div>
+      <div>
+        <h1>
+          <span>Workshop Question 9: Frequent</span>
+        </h1>
+
+        <p>
+          <span>
+            Please read <a href="ReadMe.html"> important information</a> first.
+          </span>
+        </p>
+
+        <h2>
+          <span> Description </span>
+        </h2>
+
+        <hr />
+
+        <p>
+          In this question, you are given a file with a body of text.
+          You are expected to remove dots and commas from the text, and <b>lower</b> all letters in the text.
+          Then, you need to count the occurrences of each word (text is split by <code>split(' ')</code>).
+        </p>
+        <p>
+          <b>NOTE:</b>If the occurrence of a word is less than 4, you need to remove those words from your counting structure.
+        </p>
+        <p>
+          The procedure you need to follow with the <b>remaining</b> words is as follows:
+          <ol>
+            <li>Output the remaining words (<b>sorted in reverse</b> and then <b>first 3 members left out</b>) and their occurrence counts in
+                  separate lines, as seen below.</li>
+            <ul><li>if there are 3 or fewer words remained, only output the 2nd task below.</li></ul>
+            <li>Output the resulting text as follows:</li>
+            <ul>
+                <li>Only the first three occurrences, if there are more,</li>
+                <li>Without dots and commas,</li>
+                <li>All letters are lower-cased</li>
+            </ul>
+          </ol>
+        </p>
+        <p>
+            <u>For example</u>: in <code>file1.txt</code>, when you sort the words and ignore words with occurrence counts
+            less than 4, the first 3 words are <code>value</code>, <code>the</code> and <code>target</code>. We report occurrence counts without
+            these three words.
+        </p>
+        <p>
+            At the end when we print the entire text back, we only use the first three occurrences of each word. We
+            skip the fourth, fifth, ... occurrences. Please carefully examine the examples below:
+        </p>
+
+        <hr />
+
+        <table>
+          <tr>
+            <th>Input</th>
+            <th>Output</th>
+          </tr>
+
+          <tr>
+            <td>file1.txt</td>
+            <td>
+              <pre>binary 3
+half 3
+in 3
+is 4
+search 7
+target 6
+the 15
+to 3
+value 4
+in computer science binary search also known as half-interval search logarithmic or binary chop is a algorithm that finds the position of a target value within sorted array compares the target value to middle element of array if they are not equal half in which cannot lie is eliminated and continues on remaining half again taking middle element to compare and repeating this until found if ends with remaining being empty not
+</pre>
+            </td>
+          </tr>
+
+          <tr>
+            <td>file2.txt</td>
+            <td>
+              <pre>multiple 5
+in 5
+a 6
+in computer architecture multithreading is the ability of a central processing unit or a single core in a multi-core processor to provide multiple threads of execution concurrently supported by the operating system this approach differs from multiprocessing in multithreaded application the threads share resources of single or multiple cores which include computing units cpu caches and translation lookaside buffer where multiprocessing systems include multiple complete processing units one or more cores multithreading aims to increase utilization single core by using thread-level parallelism as well as instruction-level parallelism as two techniques are complementary they are combined nearly all modern systems architectures with multithreading cpus and with cpus with cores</pre>
+            </td>
+          </tr>
+
+          <tr>
+            <td>file3.txt</td>
+            <td>
+              <pre>path 5
+other 4
+nodes 4
+node 7
+in 6
+graph 4
+for 4
+between 5
+and 6
+algorithm 7
+a 10
+dijkstra's algorithm is an algorithm for finding the shortest paths between nodes in a graph which may represent for example road networks it was conceived by computer scientist dijkstra in 1956 and published three years later the algorithm exists in many variants dijkstra's original found the shortest path between two given nodes but a more common variant fixes a single node as source node and finds shortest paths from source to all other nodes graph producing shortest-path treefor given source node graph finds path between that and every other it can also be used for finding paths from single to single destination by stopping once path to destination has been determined example if of represent cities edge costs represent driving distances pairs of cities connected by direct road dijkstra's can be used find route one city all other cities widely used application of algorithms is network routing protocols most notably is-is ospf it is also employed as subroutine algorithms such as johnson's</pre>
+            </td>
+          </tr>
+        </table>
+      </div>
+    </div>
+  </body>
+</html>
