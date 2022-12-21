@@ -88,16 +88,23 @@ def test1():
 file1.txt"""
 
     expected_output = """\
-binary 3
-half 3
-in 3
-is 4
-search 7
-target 6
-the 15
-to 3
-value 4
-in computer science binary search also known as half-interval search logarithmic or binary chop is a algorithm that finds the position of a target value within sorted array compares the target value to middle element of array if they are not equal half in which cannot lie is eliminated and continues on remaining half again taking middle element to compare and repeating this until found if ends with remaining being empty not
+ARRAY 3
+BINARY 3
+ELEMENT 2
+HALF 3
+IF 2
+IN 3
+IS 4
+MIDDLE 2
+NOT 2
+OF 2
+REMAINING 2
+SEARCH 7
+TARGET 6
+THE 15
+TO 3
+VALUE 4
+SEARCH SEARCH BINARY SEARCH A A BINARY SEARCH THE TARGET VALUE THE OF THE ARRAY THE IN THE TARGET IS THE SEARCH THE HALF THE MIDDLE ELEMENT TO TO THE TARGET VALUE AND THE TARGET VALUE IS IF THE SEARCH THE REMAINING HALF THE TARGET IS NOT IN THE ARRAY
 """
     return 1, input_to_test, expected_output
 
@@ -108,9 +115,15 @@ def test2():
 file2.txt"""
 
     expected_output = """\
-of 4
-science 3
-computer science is the study of computation automation and information computer science spans theoretical disciplines (such as algorithms theory of computation information theory and automation) to practical disciplines (including the design implementation hardware software) is generally considered an area academic research distinct from programming
+COMPUTER 4
+DISCIPLINES 2
+INFORMATION 2
+IS 2
+OF 4
+SCIENCE 3
+THE 2
+THEORY 2
+COMPUTER SCIENCE OF COMPUTATION INFORMATION THEORY AND DISCIPLINES THE AND OF AND COMPUTER SCIENCE IS OF AND COMPUTER
 """
     return 2, input_to_test, expected_output
 
@@ -121,11 +134,16 @@ def test3():
 file3.txt"""
 
     expected_output = """\
-as 5
-automated 3
-of 3
-to 5
-in mathematics and computer science an algorithm is a finite sequence of rigorous instructions typically used to solve a class of specific problems or to perform computation algorithms are used as specifications for performing calculations and data processing more advanced algorithms can perform automated deductions (referred as automated reasoning) use mathematical logical tests divert the code execution through various routes (referred decision-making) using human characteristics descriptors machines in metaphorical ways was already practiced by alan turing with terms such "memory" "search" "stimulus"
+ALGORITHMS 2
+AND 5
+AS 5
+AUTOMATED 3
+IN 2
+OF 3
+PERFORM 2
+TO 5
+USED 2
+A OF TO A USED AND ALGORITHMS PERFORM TO AS AUTOMATED AND AND TO (REFERRED TO AS AUTOMATED AS OF IN AS AND
 """
     return 3, input_to_test, expected_output
 
