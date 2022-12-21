@@ -31,23 +31,30 @@
           Then, you need to count the occurrences of each word (text is split by <code>split(' ')</code>).
         </p>
         <p>
-          <b>NOTE:</b> If the occurrence of a word is less than 3, you need to remove those words from your counting structure.
+          <b>NOTE:</b>If the occurrence of a word is less than 3, you need to remove those words from your counting structure.
         </p>
         <p>
           The procedure you need to follow with the <b>remaining</b> words is as follows:
           <ol>
-        <li>Output the remaining words (<b>sorted</b> and then <b>first 2 members left out</b>) and their occurrence counts in separate lines, as seen below.</li>
-            <ul><li>if there are less than 3 words, only output the 2nd task below.</li></ul>
-            <li>Output the resulting text as follows:
-                <ul><li>Only the first two occurrences, if there are more,</li></ul>
-                <ul><li>Without dots and commas,</li></ul>
-                <ul><li>All letters are lower-cased</li></ul>
-            </li>
+            <li>Output the remaining words (<b>sorted</b> and then <b>first 2 members left out</b>) and their occurrence counts in
+                  separate lines, as seen below.</li>
+            <ul><li>if there are 2 or fewer words remained, only output the 2nd task below.</li></ul>
+            <li>Output the resulting text as follows:</li>
+            <ul>
+                <li>Only the first two occurrences, if there are more,</li>
+                <li>Without dots and commas,</li>
+                <li>All letters are lower-cased</li>
+            </ul>
           </ol>
-        <p>
-          For example: in <code>file1.txt</code>, when you sort the words and ignore words with occurrence counts less than 3, the first 2 words are <code>a</code> and <code>array</code>. We report occurrence counts without these two words.
         </p>
-At the end when we print the entire text back, we only use the first two occurrences of each word. We skip the third, fourth, ... occurrences. Please carefully examine the examples below:
+        <p>
+            <u>For example</u>: in <code>file1.txt</code>, when you sort the words and ignore words with occurrence counts
+            less than 3, the first 2 words are <code>a</code> and <code>array</code>. We report occurrence counts without
+            these two words.
+        </p>
+        <p>
+            At the end when we print the entire text back, we only use the first two occurrences of each word. We
+            skip the third, fourth, ... occurrences. Please carefully examine the examples below:
         </p>
 
         <hr />
